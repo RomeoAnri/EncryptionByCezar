@@ -61,7 +61,7 @@ public class EncryptingActions {
         return initCount;
     }
 
-    private static boolean isCorrectDecryption(String decryptedText) {
+    public static boolean isCorrectDecryption(String decryptedText) {
         String[] arrayOfSeparatedWords = decryptedText.split(" ");
         return ((arrayOfSeparatedWords.length - countSpaces(decryptedText)) == 1) && containsMatchedToLibraryWord(arrayOfSeparatedWords);
     }
